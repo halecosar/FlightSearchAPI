@@ -1,9 +1,11 @@
 package com.amadeus.flightSearchApi.entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 
 @Entity
 @Data
@@ -19,11 +21,19 @@ public class Flight {
     @Column(name = "flight_id", columnDefinition = "serial")
     private Long id;
 
-    @Column(name = "departureAirport")
-    private String departureAirport; //kalkış havalimanı
+    @ManyToOne  (fetch = FetchType.EAGER)
+    @JoinColumn(name = "departure_airport_id", referencedColumnName = "airport_id")
+    private Airport departureAirport;
 
-    @Column(name = "arrivalAirport")
-    private String arrivalAirport; // varış havalimanı
+    @ManyToOne  (fetch = FetchType.EAGER)
+    @JoinColumn(name = "arrival_airport_id", referencedColumnName = "airport_id")
+    private Airport arrivalAirport;
+
+    @Column(name = "departure_date")
+    private LocalDateTime departureDate;
+
+    @Column(name = "arrival_date")
+    private LocalDateTime arrivalDate;
 
     @Column(name = "price")
     private double price;

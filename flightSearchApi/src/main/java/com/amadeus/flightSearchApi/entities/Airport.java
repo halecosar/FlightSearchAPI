@@ -1,9 +1,10 @@
 package com.amadeus.flightSearchApi.entities;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import javax.persistence.*;
+
 
 @Entity
 @Data
@@ -19,5 +20,5 @@ public class Airport {
     private Long id;
 
     @Column(name = "name")
-    private String name;
+        private String name;
 }
