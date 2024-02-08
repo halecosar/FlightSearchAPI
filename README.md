@@ -15,10 +15,10 @@ Flights:
 -Return date/time
 -Price
 
-Havaalanları:
+Airports:
 -ID
--Şehir
--CRUD yapısı kurgulanmıştır: 
+-City
+-CRUD structure is constructed:
 
-Dokümantasyon: Postman ile API dokümantasyonu yapılmıştır.
+Documentation: API documentation was made with Postman.
 https://api.postman.com/collections/32762077-cab58eeb-febc-44e0-9482-6a8bba630377?access_key=PMAT-01HNTCGSE492NA19Y9QQK1CCHW
