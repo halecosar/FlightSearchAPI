@@ -7,6 +7,8 @@ Description: Backend API will be developed for a flight search application.
 
 Information to be stored:
 
+Entities:
+
 Flights:
 -ID
 -Departure airport
