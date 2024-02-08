@@ -1,19 +1,19 @@
-Proje Spring Boot ile yazılmıştır.
-Veritabanı olarak PostgreSQL kullanılmıştır.
+The project was written in Spring Boot.
+PostgreSQL was used as the database.
 
-Proje ismi: Case Study: Flight Search API 
+Project name: Case Study: Flight Search API
 
-Açıklama : Bir uçuş arama uygulaması için backend API geliştirilecek.
+Description: Backend API will be developed for a flight search application.
 
-Saklanacak bilgiler:
+Information to be stored:
 
-Uçuşlar:
+Flights:
 -ID
--Kalkış havaalanı
--Varış havaalanı
--Kalkış tarih/saat
--Dönüş tarih/saat
--Fiyat
+-Departure airport
+-Arrival airport
+-Departure date/time
+-Return date/time
+-Price
 
 Havaalanları:
 -ID
